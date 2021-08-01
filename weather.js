@@ -2,6 +2,10 @@ const express=require("express");
 const app=express();
 const https=require("https");
 const bodyparser=require("body-parser");
+  app.use(express.static("public"));
+
+
+
 app.use(bodyparser.urlencoded({
   extended:true
 }));
